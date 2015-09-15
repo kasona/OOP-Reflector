@@ -1,5 +1,5 @@
-var User = require('../lib/User');
-var GroupUser = require('../lib/GroupUser');
+var User = require('./User');
+var GroupUser = require('./GroupUser');
 
 function SuperUser() {
   User.call(this, name);

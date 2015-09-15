@@ -1,4 +1,4 @@
-var User = require('../lib/User');
+var User = require('./User');
 
 function GroupUser() {
   User.call(this, name);
