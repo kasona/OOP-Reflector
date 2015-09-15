@@ -1,8 +1,7 @@
 var User = require('./User');
 
-function GroupUser() {
-  User.call(this, name);
-  console.log(name);
+function GroupUser(banana) {
+  this.banana = banana;
 }
 
 function extend(destination, source) {
