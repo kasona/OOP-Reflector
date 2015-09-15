@@ -1,8 +1,14 @@
 var User = require('./User');
 
-function GroupUser(banana) {
-  this.banana = banana;
+function GroupUser() {
 }
+
+GroupUser.prototype.banana = function(num) {
+  return 'Days till banana apocalypse: ' + num;
+};
+
+
+// add Recursion for reflector
 
 function extend(destination, source) {
   for (var k in source) {

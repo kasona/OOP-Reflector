@@ -1,12 +1,12 @@
-function User(name, age, date) {
+function User(name, age) {
   this.name = name;
   this.age = age;
-  this.date = date;
 }
 
-//Create a function called reflector
-//print current class + methods + properties that belong to only that class
-//object.getPrototypeOf(object);  returns prototype
+User.prototype.profile = function(name, age) {
+  return this.name + this.age;
+};
+
 User.prototype.reflector = function () {
   return console.log(Object.getPrototypeOf(SuperUser));
 
