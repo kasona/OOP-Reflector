@@ -7,9 +7,8 @@ User.prototype.profile = function(name, age) {
   return this.name + this.age;
 };
 
-User.prototype.reflector = function () {
-  return console.log(Object.getPrototypeOf(SuperUser));
+var user = new User('Banana', 4);
 
-};
+// console.log(user.name, user.age);
 
-module.exports = User;
+module.exports = user;
